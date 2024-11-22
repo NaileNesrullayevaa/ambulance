@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content .person {
+  width: 50%;
+  transition: 2s;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+.content .person img {
+  width: 100px;
+  height: 100px;
+}
+.content .person.active {
+  margin-left: 600px;
+}
+.content .person.active2 {
+  transform: rotate(40deg);
+  margin-top: 40px;
+}
+.content .person.active3 {
+  opacity: 0;
+  display: none;
+}
+.content .ambulance {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+  transition: 6s;
+  z-index: 999;
+  margin-right: 0;
+}
+.content .ambulance img {
+  width: 100px;
+  height: 100px;
+}
+.content .ambulance.active2 {
+  margin-right: 700px;
+}
+.content .ambulance.active3 {
+  margin-right: 1800px;
+}/*# sourceMappingURL=style.css.map */
